@@ -8,6 +8,13 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
+      {/* Header with name */}
+      <div className="absolute top-6 left-6 z-20">
+        <h2 className="text-lg font-semibold text-foreground">
+          Youssuf Abdula <span className="text-primary">|</span> <span className="text-muted-foreground">Analista de Dados</span>
+        </h2>
+      </div>
+      
       {/* Background gradient */}
       <div className="absolute inset-0 gradient-hero opacity-90" />
       
