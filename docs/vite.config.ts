@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => {
+export default defineConfig(({ mode }) => ({ // Note a mudança aqui: o parêntese e a chave
   base: '/youssufabdula.github.io/', // ADICIONE ESTA LINHA AQUI
   server: {
     host: "::",
@@ -19,4 +19,7 @@ export default defineConfig(({ mode }) => {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-});
+  build: {
+    outDir: 'docs'
+  }
+})); // E aqui, no final.
